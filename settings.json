@@ -1,0 +1,72 @@
+{
+    "workbench.startupEditor": "none",
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    //Terminal
+    "terminal.integrated.fontFamily": "Cascadia Code",
+    "terminal.integrated.enableFileLinks": "on",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.gpuAcceleration": "on",
+    //Editor
+    "editor.guides.bracketPairs": true,
+    "editor.lineNumbers": "relative",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.fontWeight": "normal",
+    "editor.autoClosingBrackets": "always",
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum','calt'",
+    "editor.fontSize": 11.5,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "entity.other.attribute-name", //HTML Attributes
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js" //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    //Code Runner
+    "code-runner.runInTerminal": true,
+    //Error Lens
+    "errorLens.fontStyleItalic": true,
+    // Python
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.analysis.completeFunctionParens": true,
+    // C/C++
+    "C_Cpp.enhancedColorization": "enabled",
+    "errorLens.exclude": [
+        "\"opciones\": Unknown word\\."
+    ],
+    "workbench.colorTheme": "Default Light+"
+}
